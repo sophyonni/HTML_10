@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA_Compatible" content="ie=edge">
+  <title>Climate-Dashboard</title>
+
+ 
+   <!-- Bring in our bootstrap stylesheet -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen">
+   <!-- stylesheet -->
+   <link rel="stylesheet" href="style.css" media="screen">
+
+</head>
+
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid navbar-custom">
+
+      
+      <!-- Brand and toggle for mobile display -->
+      <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="dropdown" aria-expanded="true">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <ul class="dropdown-menu pull-right"> 
+            <li><a href="Comparison.html">Comparison</a></li>
+            <li><a href="Data.html">Data</a></li>        
+            <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul>
+                <li><a href="MaxTemperature.html">Max Temperature</a></li>
+                <li><a href="Humidity.html">Humidity</a></li>
+                <li><a href="Cloudiness.html">Cloudiness</a></li>
+                <li><a href="WindSpeed.html">Wind Speed</a></li>
+            </ul>
+            </li>
+          </ul>
+
+          <div class="col-xs-9 phone-nav">
+            <a class="navbar-brand" href="index.html" id="landing-btn">Latitude</a>
+          </div>
+        </div>  <!-- navbar-header -->
+
+
+
+        <!-- navigation links, content for toggling -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right"navbar-right-custom> 
+            </li> 
+            <li><a href="Comparison.html">Comparison</a></li>
+            <li><a href="Data.html">Data</a></li>        
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="MaxTemperature.html">Max Temperature</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="Humidity.html">Humidity</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="Cloudiness.html">Cloudiness</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="WindSpeed.html">Wind Speed</a></li>
+            </ul>
+            <li><a href="">    </a></li> 
+          </ul>
+        </div>    <!-- /.navbar-collapse -->
+    </div> <!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <section class="row">
+      <div class="col-sm-8">
+        <article class="description-content">
+          <h1 class="description-header">Summary: Latitude vs. X</h1>
+          <hr class="description-hr"/>
+          
+          <img src="Instructions/Resources/assets/images/MaxTemperature.png" alt="" id="description-image"/>
+          <p>The purpose of this project was to analyze how the weather 
+            changes as you get loser to the equator. To accomplish this
+            analysis, first, the data was pulled from the OpenWeather Map API
+            to create a dataset on over 500 cities.</p>
+          <p>After assembling the dataset, Matplotlib Python library was used to plot various
+            aspects of the weather vs, latitude. Factors observed included: max temperature, humidity, 
+            cloudines, and wind speed. This site provides the source data ad visualizations created
+            as part of the analysis, as well as explanations and descriptions of any trends and
+            correlations observed.</p>
+        </article> <!-- article -->
+      </div> <!-- col-sm-8 -->
+
+      <div class="col-sm-4"
+      
+        <!-- Visualizations imageNav area -->
+        <article id="imageNav-area">
+          <div class="imageNav-content">
+            <h2 class="imageNav-header">Visualizations</h2>
+            <hr />
+            <div id="images">
+                <a href="MaxTemperature.html"><img src="Instructions/Resources/assets/images/MaxTemperature.png" class="imageNav-photo"></a>
+                <a href="Humidity.html"><img src="Instructions/Resources/assets/images/Humidity.png" class="imageNav-photo"></a>
+                <a href="Cloudiness.html"><img src="Instructions/Resources/assets/images/Cloudiness.png" class="imageNav-photo"></a>
+                <a href="Windspeed.html"><img src="Instructions/Resources/assets/images//WindSpeed.png" class="imageNav-photo"></a> 
+            </div>
+          </div>  <!-- imageNav content -->
+        </article>  <!-- imageNav-area -->
+        <!-- End of Visualization imageNav area -->
+      </div>  
+    </section> <!-- row  -->
+  </div> <!-- End of the container -->
+
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

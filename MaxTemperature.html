@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA_Compatible" content="ie=edge">
+  <title>Climate Dashboard</title>
+
+   <!-- bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen">
+  <!--  stylesheet -->
+  <link rel="stylesheet" href="style.css" media="screen">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid navbar-custom">
+
+      
+      <!-- toggle for mobile display -->
+      <div class="navbar-header">
+          
+          <button type="button" class="navbar-toggle" data-toggle="dropdown" aria-expanded="true">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <ul class="dropdown-menu pull-right"> 
+            <li><a href="Comparison.html">Comparison</a></li>
+            <li><a href="Data.html">Data</a></li>        
+            <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul>
+                <li><a href="MaxTemperature.html">Max Temperature</a></li>
+                <li><a href="Humidity.html">Humidity</a></li>
+                <li><a href="Cloudiness.html">Cloudiness</a></li>
+                <li><a href="WindSpeed.html">Wind Speed</a></li>
+            </ul>
+            </li>
+          </ul>
+
+          <div class="col-xs-9 phone-nav">
+            <a class="navbar-brand" href="index.html" id="landing-btn">Latitude</a>
+          </div>
+        </div>  <!-- navbar-header -->
+
+
+
+        <!-- navigation links, content for toggling -->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right"navbar-right-custom> 
+            </li> 
+            <li><a href="Comparison.html">Comparison</a></li>
+            <li><a href="Data.html">Data</a></li>        
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="MaxTemperature.html">Max Temperature</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="Humidity.html">Humidity</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="Cloudiness.html">Cloudiness</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="Windspeed.html">Wind Speed</a></li>
+            </ul>
+            <li><a href="">    </a></li> 
+          </ul>
+        </div>    <!-- /.navbar-collapse -->
+    </div> <!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <article class="description-content">
+          <h1 class="description-header text-center">Max Temperature</h1>
+          <hr class="description-hr"/>
+          <img src="Instructions/Resources/assets/images/MaxTemperature.png" alt="" class="img-responsive"/>
+          <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Degree Latitude). More interestingly, however, is the fact that Southern Hemisphere tends to be warmer this time of year than Northern Hemisphere. This may be due to the tilt of the earth.</p>
+        </article> <!-- article -->
+      </div> <!-- col-sm-8 -->
+
+      <div class="col-sm-4">
+        <!-- Visualizations imageNav area -->
+        <section id="imageNav-area">
+          <div class="imageNav-content">
+            <div class="imageNav-header text-center">Visualizations</div>
+            <hr />
+            <div id="images">
+                <a href="MaxTemperature.html"><img src="Instructions/Resources/assets/images/MaxTemperature.png" alt="Latitude vs. Max Temperature" class="imageNav-photo active"></a>
+                <a href="Humidity.html"><img src="Instructions/Resources/assets/images/Humidity.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                <a href="Cloudiness.html"><img src="Instructions/Resources/assets/images/Cloudiness.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+                <a href="Windspeed.html"><img src="Instructions/Resources/assets/images/Windspeed.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+            </div>
+          </div>  <!-- imageNav content -->
+        </section>  <!-- imageNav-area -->
+        <!-- End of Visualization imageNav area -->
+      </div> <!--  col-sm-4  -->
+
+    </div> <!-- row  -->
+  </div> <!-- End of the container -->
+
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
